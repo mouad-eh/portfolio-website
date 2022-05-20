@@ -1,13 +1,70 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Segoe UI';
+  background-color: #f6f6f6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section {
+  padding: 2rem 5%;
+  border-bottom: 1px solid grey;
+}
+
+header{
+  border-bottom: 1px solid grey;
+}
+
+section .sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+section .sectionTitle h1 {
+  font-size: 2rem;
+}
+
+section p {
+  font-size: 1.25em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+
+h1:after {
+  content:' ';
+  display:block;
+  border:2px solid #0FA8E7;
+  border-radius:4px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+  -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+  -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: local('Segoe UI'), url(./fonts/Segoe\ UI.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: local('Segoe UI Bold'), url(./fonts/Segoe\ UI\ Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CascadiaCode';
+  src: local('CascadiaCode'), url(./fonts/CascadiaCode-Regular-VTT.ttf) format('truetype');
 }

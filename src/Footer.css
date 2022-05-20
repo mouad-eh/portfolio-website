@@ -1,0 +1,26 @@
+#footer{
+    background-color: #022673;
+    font-family: "CascadiaCode";
+    color: white
+}
+.footerFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer > p{
+    text-align: right;
+}
+
+@media only screen and (max-width: 675px) {
+    #footer{
+        text-align: center;
+    }
+    .footerFlex{
+        display: inherit;
+    }
+    #footer > p{
+        text-align: center;
+    }
+}  
